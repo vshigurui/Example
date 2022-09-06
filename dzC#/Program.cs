@@ -1,72 +1,32 @@
-﻿    // Задача №2
+﻿    // Задача №10   Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа
 
-// int a = 5;
-// int b = 7;
-// int max = a;
-// if (a > max) max = a;
-// if (b > max) max = b;
-// Console.Write("max = ");
-// Console.WriteLine(max);
+// int a = new Random().Next(100, 1000);
+// Console.WriteLine(a);
+// Console.Write(Convert.ToString(a)[1]);
 
-// Console.Write("число ");
-// int a = 2;
-// int b = 10;
-// int max = a;
-// if (a > max) max = a;
-// if (b > max) max = b;
-// Console.Write("max = ");
-// Console.WriteLine(max);
+    // Задача №13: Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
 
-// Console.Write("число ");
-// int a = -9;
-// int b = -3;
-// int max = a;
-// if (a > max) max = a;
-// if (b > max) max = b;
-// Console.Write("max = ");
-// Console.WriteLine(max);
-
-    // Задача №4
-
-// int a = 2;
-// int b = 3;
-// int c = 7;
-// int max = a;
-// if (a > max) max = a;
-// if (b > max) max = b;
-// if (c > max) max = c;
-// Console.Write("max = ");
-// Console.WriteLine(max);
-
-// int a = 44;
-// int b = 5;
-// int c = 78;
-// int max = a;
-// if (a > max) max = a;
-// if (b > max) max = b;
-// if (c > max) max = c;
-// Console.Write("max = ");
-// Console.WriteLine(max);
-
-
-    // Задача № 6
-
-// int a = Convert.ToInt32(Console.ReadLine());
-// if(a % 2 == 0) {
-//     Console.WriteLine("Число четное");
-// }
-// else {
-//     Console.WriteLine("Число нечетное");
+// Console.WriteLine("Введите число: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+//      if (n > 100) {
+//          Console.Write(Convert.ToString(n)[2]);
+//}
+//      else {
+//          Console.WriteLine("третьей цифры нет");
 // }
 
 
-// Задача № 8
+    // Задача № 15: Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
 
-// Console.Write("Введите число: ");
-// int a = Convert.ToInt32(Console.ReadLine());
-// for (int i = 0; i <= a; i++) {
-//     if (i % 2 == 0) {
-//         Console.Write(i);
-//         Console.Write(" ");
-//     }
-// }
+Console.WriteLine("Введите цифру обозначающую день недели: ");
+int dayNumber = Convert.ToInt32(Console.ReadLine());
+if (dayNumber == 6 || dayNumber==7) {
+    Console.WriteLine("этот день выходным");
+}
+else if (dayNumber < 1 || dayNumber > 6) {
+    Console.WriteLine("это не день недели");
+}
+else {
+    Console.WriteLine("этот день рабочий");
+}
+
