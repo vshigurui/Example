@@ -1,4 +1,4 @@
-﻿Console.Clear();
+﻿// Console.Clear();
 // Console.WriteLine("Введите координаты двух точек");
 // Console.Write("Введите x1: ");
 //     int x1 = Convert.ToInt32(Console.ReadLine());
